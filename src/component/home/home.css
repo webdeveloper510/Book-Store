@@ -1,0 +1,107 @@
+.about-us-sec,.bggray {
+    background: #F5F2EE;
+    width: 100%;
+    float: left;
+    padding-bottom: 0px;
+}
+nav.awssld__bullets {
+    display: none;
+}
+
+.title-bg {
+    width: 310px;
+    float: right;
+    
+    background-image: url("../assests/Home/aboutbg.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    padding:10px;
+
+}
+.left-img {
+    width: 35%;
+}
+.left-img img {
+    width: 100%;
+}
+.abt-title {
+    position: absolute;
+    right: 0;
+}
+.bottom_content {
+    float: left;
+    width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.title-bg h2 {
+    color: #FF9E5E;
+    font-size: 40px;
+    margin: 0px;
+    text-transform: capitalize;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+}
+.about-us-sec h3,.bggray h3 {
+    color: #1A1A1A !important;
+    font-size: 21px;
+    line-height: 31px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.thrid-sec.bggray .right-contnet {
+    margin: 0 auto;
+    width: 50%;
+}
+.right-contnet {
+    width: 60%;
+}
+
+.course-title .title-bg {
+   
+    float: left;
+ 
+    background-image:url("../assests/Home/course.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iner-info {
+    text-align: center;
+    float: left;
+    width: 100%;
+}
+
+.course-info {
+    border: 1px solid #FF9E5E;
+    border-radius: 50px;
+    padding: 30px 10px 30px 10px;
+    float: left;
+    width: 100%;
+}
+
+
+
+.icon-co img {
+    width: 120px;
+}
+
+.btn-center {
+    margin: 0 auto;
+}
+
+
+
+.icon-co .button-container {
+    margin: 0px !important;
+}
+.pad-30 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
