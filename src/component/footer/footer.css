@@ -1,0 +1,127 @@
+.footer {
+    background: #000;
+    padding-top: 31px;
+    float: left;
+    width: 100%;
+}
+.footer1 p {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 14px;
+}
+.footer1 p {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 14px;
+}
+
+.paymet {
+    float: left;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.txt-pay {
+    width: max-content;
+    float: left;
+}
+
+.img-pay {
+    width: max-content;
+    float: left;
+}
+
+.img-pay li {
+    float: left;
+}
+
+.txt-pay p {
+    color: #F5F2EE;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.footer2 h2 {
+    color: #F5F2EE;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 20;
+    margin-bottom: 20px;
+}
+a.links {
+    color: #F5F2EE;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.footer2 li
+{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.follow-us li {
+    display: inline-block;
+    list-style: none;
+}
+.btn-1 a {
+    /* background: #F5F2EE; */
+    /* width: 100%; */
+    /* padding: 10px; */
+    /* width: 100%; */
+    color: #FF9E5E;
+    font-family: Montserrat;
+    font-size: 20px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.btn-1 {
+    float: left;
+    width: 100%;
+    margin-bottom: 13px;
+    border-radius: 10px;
+    background: #F5F2EE;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-2 {
+    float: left;
+    width: 100%;
+    margin-bottom: 13px;
+    border-radius: 10px;
+    background: #FF9E5E;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-2 a {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 20px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.follow-us ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}

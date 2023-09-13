@@ -1,7 +1,9 @@
 import React from 'react'
 import Container from 'react-bootstrap/Container';
 import { Homeslider } from '../home-slider/Homeslider';
+import { Showcase } from '../showcasebox/Showcase';
 import { Header } from '../header/Header';
+import { Footer } from '../footer/Footer'
 import aboutbg from "../assests/Home/aboutbg.png";
 import aboutleft from "../assests/Home/about1.png";
 import sellbbok from "../assests/Home/sell.png";
@@ -10,10 +12,17 @@ import course1 from "../assests/Home/course1.png";
 import course2 from "../assests/Home/course1 (2).png";
 import course3 from "../assests/Home/course1 (3).png";
 import bookstore from "../assests/Home/bookstore.png";
+import showcase1 from "../assests/Home/showcase1 (1).png";
+import showcase2 from "../assests/Home/showcase1 (2).png";
+import showcase3 from "../assests/Home/showcase1 (3).png";
+import showcase4 from "../assests/Home/showcase1 (4).png";
+import money from "../assests/Home/sub.png";
+
 import'./home.css'
 import {Link, NavLink, useNavigate} from 'react-router-dom';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+
 export const Home = () => {
   return (
     <div>
@@ -22,7 +31,7 @@ export const Home = () => {
 {/* about code */}
 <div className="about-us-sec">
     <div className="inner-about">
-        <div className="abt-title"><div className="title-bg"><h2>About us</h2></div></div>
+        <div className="abt-title"><div className="right-bg"><h2>About us</h2></div></div>
         <div className='bottom_content'>
 		<div class="left-img">
 		<img src ={aboutleft} />
@@ -123,7 +132,7 @@ Get Started & Learning Today</h2>
 <div className='bottom_content'>
 <Container className='pad-30'>
 <Row>
-        <Col><div className="course-info">
+       <Col  md ={4} xs={12}><div className="course-info">
             <div className='iner-info'>
                 <div className='icon-co'>
                     <img src={course1}/>
@@ -132,7 +141,7 @@ Get Started & Learning Today</h2>
                     <div class="button-container"><div class="btn-center"> <NavLink className="btn-round" to="/">read more</NavLink></div></div>
                 </div>
                 </div></div></Col>
-        <Col><div className="course-info">
+       <Col  md ={4} xs={12}><div className="course-info">
             <div className='iner-info'>
                 <div className='icon-co'>
                     <img src={course3}/>
@@ -141,7 +150,7 @@ Get Started & Learning Today</h2>
                     <div class="button-container"><div class="btn-center"> <NavLink className="btn-round" to="/">read more</NavLink></div></div>
                 </div>
                 </div></div></Col>
-     <Col><div className="course-info">
+    <Col  md ={4} xs={12}><div className="course-info">
             <div className='iner-info'>
                 <div className='icon-co'>
                     <img src={course2}/>
@@ -154,8 +163,122 @@ Get Started & Learning Today</h2>
 </Container>
 </div>
 </div>
-{/* Courses code */}
+{/* end  Courses code */}
 
+{/* Showcase code */}
+<div className="thrid-sec bggray">
+<div class="course-title"><div class="right-bg"><h2>Showcase</h2></div></div>
+<div className='bottom_content'>
+<Container className='pad-30'>
+
+<Row>
+        <Col  md ={3} xs={6}><div className="showcasw-info">
+            <div className='iner-info'>
+                <div className='show-co'>
+                    <img src={showcase2}/>
+                    <div class="text-over_image">
+					<h2>HORROR</h2>
+					</div>
+                   
+                    <div class="button-container"><div class="btn-center"> <NavLink className="btn-round plain" to="/">View Details</NavLink></div></div>
+                </div>
+                </div></div></Col>
+				  <Col  md ={3} xs={6}><div className="showcasw-info">
+            <div className='iner-info'>
+                <div className='show-co'>
+                    <img src={showcase3}/>
+                    <div class="text-over_image">
+					<h2>SCI-FI</h2>
+					</div>
+                   
+                    <div class="button-container"><div class="btn-center"> <NavLink className="btn-round plain" to="/">View Details</NavLink></div></div>
+                </div>
+                </div></div></Col>
+       <Col  md ={3} xs={6}><div className="showcasw-info">
+            <div className='iner-info'>
+                <div className='show-co'>
+                    <img src={showcase4}/>
+                    <div class="text-over_image">
+					<h2>ADVENTURE</h2>
+					</div>
+                   
+                    <div class="button-container"><div class="btn-center"> <NavLink className="btn-round plain" to="/">View Details</NavLink></div></div>
+                </div>
+                </div></div></Col>
+     <Col  md ={3} xs={6}><div className="showcasw-info">
+            <div className='iner-info'>
+                <div className='show-co'>
+                    <img src={showcase2}/>
+                    <div class="text-over_image">
+					<h2>BIOGRAPHY</h2>
+					</div>
+                   
+                    <div class="button-container"><div class="btn-center"> <NavLink className="btn-round plain" to="/">View Details</NavLink></div></div>
+                </div>
+                </div></div></Col>
+      </Row>
+</Container>
+</div>
+</div>
+{/* end Showcase code */}
+
+{/* Subscriptions code */}
+
+<div className="thrid-sec bggray">
+<div class="course-title"><div class="title-bg sub"><h2>Subscriptions</h2></div></div>
+<div className='bottom_content'>
+<Container className='pad-30'>
+<Row>
+      <Col  md ={3} xs={12}>
+		<div className="subs bg-organe">
+            <div className='iner-info'>
+                <div className='sub-info'>
+                   
+                    <h3>Monthly</h3>
+					<h2 className="Price">$299</h2>
+                    <p>Unde omnis iste natus error sit voluptal tem accusantium dolore lamque laudant.</p>
+                    <div class="button-containe"><div class=""> <NavLink className="btn-round" to="/">read more</NavLink></div></div>
+                </div>
+                </div></div></Col>
+      <Col  md ={3} xs={12}><div className="subs bg-pink">
+             <div className='sub-info Annually'>
+                   
+                    <h3>Annually</h3>
+					<h2 className="Price">$299</h2>
+                    <p>Unde omnis iste natus error sit voluptal tem accusantium dolore lamque laudant.</p>
+                    <div class="button-containe"><div class=""> <NavLink className="btn-round" to="/">read more</NavLink></div></div>
+                </div></div></Col>
+  <Col  md ={3} xs={12}><div className="subs margin-top">
+               <div className='sub-info '>
+              
+                   <h3>Save your
+money now</h3>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div className='img-last'> <img src={money}/></div>
+           
+
+            
+                </div></div></Col>
+      </Row>
+</Container>
+</div>
+</div>
+{/* end  Subscriptions code */}
+{/*Testimonials code */}
+<div className="thrid-sec bggray">
+<div class="course-title"><div class="right-bg"><h2>Testimonials</h2></div></div>
+
+<div className='bottom_content bg-img-or'>
+  
+<Container className='pad-30'>
+<Showcase></Showcase>
+
+</Container>
+</div>
+</div>
+{/* end Testimonials code */}
+<Footer></Footer>
     </div>
   )
 }

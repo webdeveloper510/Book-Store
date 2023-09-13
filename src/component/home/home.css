@@ -7,8 +7,10 @@
 nav.awssld__bullets {
     display: none;
 }
-
-.title-bg {
+.show-co img {
+    width: 100%;
+}
+.right-bg {
     width: 310px;
     float: right;
     
@@ -37,7 +39,7 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 }
-.title-bg h2 {
+.right-bg h2 {
     color: #FF9E5E;
     font-size: 40px;
     margin: 0px;
@@ -63,21 +65,82 @@ justify-content: space-between;
 }
 
 .course-title .title-bg {
-   
+   width: 310px;
     float: left;
- 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    padding: 10px;
+
     background-image:url("../assests/Home/course.png");
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
+.title-bg h2 {
+    color: #FF9E5E;
+    font-size: 40px;
+    margin: 0px;
+    text-transform: capitalize;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+}
 .iner-info {
     text-align: center;
     float: left;
     width: 100%;
 }
-
+.subs {
+    border-radius: 50px;
+    padding: 50px 50px 50px 50px;
+    float: left;
+    width: 100%;
+    background: #FF9E5E;
+}
+.subs.bg-pink {
+    border-radius: 50px;
+    background: rgba(255, 158, 94, 0.20) !important;
+}
+.sub-info p {
+    color: #F5F2EE;
+    font-size: 15px;
+    text-align: left;
+}
+.img-last img {
+    width: 100%;
+}
+.img-last {
+    text-align: c;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.sub-info.Annually h3,.sub-info.Annually .Price,.sub-info.Annually p{
+    color: #FF9E5E !important;
+}
+h2.Price {
+    color: #F5F2EE;
+    font-family: Montserrat;
+    font-size: 55px;
+    text-align: left;
+    font-weight: bold;
+}
+.sub-Monthly .btn-round {
+    background: #F7E1D1;
+    color: #FF9E5E;
+}
+.sub-info h3 {
+    color: #F5F2EE !important;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    margin-bottom: 10px !important;
+    font-weight: 600;
+    line-height: normal;
+    text-align: left;
+}
 .course-info {
     border: 1px solid #FF9E5E;
     border-radius: 50px;
@@ -96,12 +159,66 @@ justify-content: space-between;
     margin: 0 auto;
 }
 
-
+.title-bg.sub {
+    width: 398px;
+}
 
 .icon-co .button-container {
     margin: 0px !important;
 }
 .pad-30 {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
+.show-co img {
+    width: 100%;
+}
+
+.show-co {
+    position: relative;
+}
+
+.text-over_image {
+    position: absolute;
+    bottom: 30px;
+    color: red;
+    left: 0;
+    right: 0;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif !important;
+}
+a.btn-round.plain {
+    background: none !important;
+    border: 1px solid #FF9E5E;
+    color: #FF9E5E;
+}
+.text-over_image h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+}
+.margin-top{
+    margin-top: -113px;
+}
+.bg-img-or{
+    background-image: url("../assests/Home/bg-test.png") !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+}
+
+.subs.bg-organe a {
+    background: #F7E1D1;
+    color: #FF9E5E;
+}
+
+
+@media screen and (max-width: 767px) {
+    .course-info,.subs {
+        margin-bottom: 20px;
+    }
+    .margin-top
+    {
+        margin-top:0px;
+    }
+  }
+
