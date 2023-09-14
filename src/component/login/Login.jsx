@@ -41,6 +41,11 @@ export const Login = () => {
          <input type="password" name="pass" placeholder='Password' />
        
        </div>
+	   {action==="Login"?<div></div>:<div className="input-container">
+        <input type="password" name="pass" placeholder='Confirm Password' />
+       
+      </div>}
+	  
        {action==="Sign Up"?<div></div>:
        <div className="for-reset">
         <div className="forget"><a href=""  onClick={()=>{setAction("Forgot your password?")}}>Forgot your password?</a></div>

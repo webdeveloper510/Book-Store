@@ -19,7 +19,7 @@ export const Footer = () => {
             <div class="colum">
             <Container>
 <Row>
-    <Col xs={12}>
+    <Col xs={12}  md={4}>
     <div className='footer1'>
     <img src={Logo} alt='Book store' />
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -41,11 +41,11 @@ export const Footer = () => {
     </div>
     </div>
     </Col>
-    <Col xs={12}>
+    <Col xs={12} md={4}>
   <div class="footer2">
     <h2>QUICK LINES</h2>
 	<Row>
-    <Col xs={12}>
+    <Col xs={12} md={6}>
     <li><NavLink className="links" to="/">Home</NavLink>
     </li>
 	<li><NavLink className="links" to="/">Our Authors</NavLink>
@@ -56,7 +56,7 @@ export const Footer = () => {
     </li>
 	
     </Col>
-    <Col xs={12}>
+    <Col xs={12} md={6}>
 	  <li><NavLink className="links" to="/">News</NavLink>
     </li>
 	<li><NavLink className="links" to="/">Contact us</NavLink>
@@ -69,7 +69,7 @@ export const Footer = () => {
 	</Row>
   </div>
     </Col >
-    <Col xs={12}>
+    <Col xs={12} md={4}>
   <div class="footer3">
 <div class="follow-us">
 <ul>

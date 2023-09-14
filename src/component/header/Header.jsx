@@ -33,7 +33,7 @@ export const Header = () => {
         <NavLink className="" to="/">Home</NavLink>
         </li>
         <li className="nav-item dropdown">
-          <NavLink className="" to="/">About us</NavLink>
+          <NavLink className="" to="/about">About us</NavLink>
         </li>
         <li className="nav-item">
          <NavLink className="" to="/">sell book</NavLink>
