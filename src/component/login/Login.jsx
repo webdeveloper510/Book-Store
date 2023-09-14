@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './Login.css'
 import LeftImage from "../assests/Login/left-photo.jpg";
 import Logo from "../assests/Login/logo.png";
-
+import {Link, NavLink, useNavigate} from 'react-router-dom';
 export const Login = () => {
     const [action,setAction] = useState("Login")
   return (
@@ -48,7 +48,7 @@ export const Login = () => {
 	  
        {action==="Sign Up"?<div></div>:
        <div className="for-reset">
-        <div className="forget"><a href=""  onClick={()=>{setAction("Forgot your password?")}}>Forgot your password?</a></div>
+        <div className="forget"><a href=""  onClick={()=>{setAction("Forgot your password?")}}><NavLink className="links" to="/forgotPassword">Forgot your password?</NavLink></a></div>
         <div className="reset"><a href="">Reset your password?</a></div>
        </div>
 }
