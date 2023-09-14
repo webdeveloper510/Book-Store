@@ -23,3 +23,68 @@ button.btn.btn-outline-dark.fw-bold {
     left: 0;
     right: 0;
 }
+ul.navbar-nav.mx-auto.mb-2.mb-lg-0 {
+    align-items: center;
+}
+.navbar-nav {
+    width: 100%;
+}
+ul.navbar-nav.mx-auto.mb-2.mb-lg-0 {
+    width: max-content;
+}
+button.navbar-toggler {
+    background: #fff;
+    border-radius: 0px !important;
+}
+/*resposive start*/
+@media screen and (max-width: 991px) {
+    .navbar-nav {
+        background: #fff;
+    }
+    ul.navbar-nav.mx-auto.mb-2.mb-lg-0 {
+        width: 100%;
+        float: left;
+    }
+    .navbar-nav {
+        background: #fff;
+    }
+    
+    ul.navbar-nav.mx-auto.mb-2.mb-lg-0 {
+        width: 100%;
+        float: left;
+        padding: 0px;
+    }
+    
+    ul.navbar-nav li a {
+        color: #ff9e5e;
+        text-align: left;
+    }
+    
+    ul.navbar-nav li {
+        border-bottom: 1px solid #efefef;
+        width: 100%;
+        padding: 13px;
+    }
+    .navbar-nav {
+        background: #fff;
+        width: max-content;
+        float: right;
+        border: 1px solid #efefef;
+    }
+    .header_top .btn-round {
+        margin: 20px;
+      
+    }
+
+  }
+  @media screen and (max-width: 767px) {
+  .header_top{
+    position: relative;
+  }
+  div#basic-navbar-nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 68px;
+}
+}

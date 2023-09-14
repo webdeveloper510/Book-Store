@@ -222,3 +222,29 @@ a.btn-round.plain {
     }
   }
 
+/*resposive start*/
+@media screen and (max-width: 991px) {
+.abt-title {
+    position: relative;
+}
+
+}
+@media screen and (max-width: 767px) {
+.right-contnet
+{
+    width:100%;
+}
+.left-img,.thrid-sec.bggray .right-contnet{
+    width: 100%;
+}
+.bottom_content{
+flex-direction: column;
+}
+.thrid-sec .right-contnet {
+    order: 11;
+}
+.right-bg h2
+{
+    font-size: 30px;
+}
+}

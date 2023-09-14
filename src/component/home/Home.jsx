@@ -32,7 +32,7 @@ export const Home = () => {
 <div className="about-us-sec">
     <div className="inner-about">
         <div className="abt-title"><div className="right-bg"><h2>About us</h2></div></div>
-        <div className='bottom_content'>
+        <div className='bottom_content with-height'>
 		<div class="left-img">
 		<img src ={aboutleft} />
 
@@ -229,7 +229,7 @@ Get Started & Learning Today</h2>
 <div className='bottom_content'>
 <Container className='pad-30'>
 <Row>
-      <Col  md ={3} xs={12}>
+      <Col  md ={4} xs={12}>
 		<div className="subs bg-organe">
             <div className='iner-info'>
                 <div className='sub-info'>
@@ -240,7 +240,7 @@ Get Started & Learning Today</h2>
                     <div class="button-containe"><div class=""> <NavLink className="btn-round" to="/">read more</NavLink></div></div>
                 </div>
                 </div></div></Col>
-      <Col  md ={3} xs={12}><div className="subs bg-pink">
+      <Col  md ={4} xs={12}><div className="subs bg-pink">
              <div className='sub-info Annually'>
                    
                     <h3>Annually</h3>
@@ -248,7 +248,7 @@ Get Started & Learning Today</h2>
                     <p>Unde omnis iste natus error sit voluptal tem accusantium dolore lamque laudant.</p>
                     <div class="button-containe"><div class=""> <NavLink className="btn-round" to="/">read more</NavLink></div></div>
                 </div></div></Col>
-  <Col  md ={3} xs={12}><div className="subs margin-top">
+  <Col  md ={4} xs={12}><div className="subs margin-top">
                <div className='sub-info '>
               
                    <h3>Save your
