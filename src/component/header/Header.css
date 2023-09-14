@@ -6,7 +6,7 @@ ul.navbar-nav a {
     text-transform: uppercase;
     text-decoration: none;
     font-family: 'Plus Jakarta Sans', sans-serif;
-    color: #fff;
+    color: #000;
 }
 button.btn.btn-outline-dark.fw-bold {
     background: #FF9E5E;
@@ -17,11 +17,14 @@ button.btn.btn-outline-dark.fw-bold {
     text-transform: uppercase;
     padding: 13px 29px;
 }
+
+
 .header_top {
-    position: absolute;
-    z-index: 99;
-    left: 0;
-    right: 0;
+    -webkit-box-shadow: 0 3px 37px rgb(0,0,0,.07);
+    -moz-box-shadow: 0 3px 37px rgb(0,0,0,.07);
+    box-shadow: 0 3px 37px rgb(0,0,0,.07);
+    float: left;
+    width: 100%;
 }
 ul.navbar-nav.mx-auto.mb-2.mb-lg-0 {
     align-items: center;
@@ -87,4 +90,8 @@ button.navbar-toggler {
     right: 0;
     top: 68px;
 }
+}
+
+li.nav-item .active {
+    color: #FF9E5E !important;
 }

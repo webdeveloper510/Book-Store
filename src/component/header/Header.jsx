@@ -30,22 +30,22 @@ export const Header = () => {
          <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
        
         <li className="nav-item">
-        <NavLink className="" to="/">Home</NavLink>
+        <NavLink exact activeClassName="active" to="/">Home</NavLink>
         </li>
         <li className="nav-item dropdown">
-          <NavLink className="" to="/about">About us</NavLink>
+          <NavLink exact activeClassName="active" to="/about">About us</NavLink>
         </li>
         <li className="nav-item">
-         <NavLink className="" to="/">sell book</NavLink>
+         <NavLink className="" to="/login">sell book</NavLink>
         </li>
 		<li className="nav-item">
-      <NavLink className="" to="/">write book</NavLink>
+      <NavLink exact activeClassName="active" to="/login">write book</NavLink>
         </li>
 		<li className="nav-item">
-           <NavLink className="" to="/">courses</NavLink>
+           <NavLink exact activeClassName="active" to="/login">courses</NavLink>
         </li>
 		<li className="nav-item">
-           <NavLink className="" to="/">book stores</NavLink>
+           <NavLink exact activeClassName="active" to="/login">book stores</NavLink>
         </li>
       </ul>
       <NavLink className="btn-round" to="/login">CREATE ACCOUNT</NavLink>

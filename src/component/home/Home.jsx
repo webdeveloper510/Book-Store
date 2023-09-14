@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect } from 'react'
 import Container from 'react-bootstrap/Container';
 import { Homeslider } from '../home-slider/Homeslider';
 import { Showcase } from '../showcasebox/Showcase';
@@ -24,6 +25,12 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 export const Home = () => {
+    useEffect(() => {
+        document.body.classList.add('home-layout')
+        return () => {
+          document.body.classList.remove('home-layout')
+        }
+      }, [])
   return (
     <div>
           <Header></Header>

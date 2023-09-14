@@ -66,3 +66,29 @@ a.btn-round:hover {
   color: #fff;
 }
 
+body.home-layout ul.navbar-nav a {
+color:#fff;
+}
+
+  body.home-layout .header_top {
+    position: absolute;
+    z-index: 99;
+    left: 0;
+    right: 0;
+}
+  
+.page-header {
+  padding: 15px 0;
+  font-size: .9em;
+  color: #1d2530;
+  text-transform: uppercase;
+  font-weight: 400;
+  background-color: #f8f9fa;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  background-color: #F0FBF7;
+  float: left;
+  width: 100%;
+}
