@@ -79,10 +79,7 @@ input.sub-btn {
     width: 50%;
     float: left;
 }
-.Login input {
-    margin: 0px !important;
-    padding: 0px !important;
-}
+
 .reset {
     float: left;
     width: 50%;
@@ -144,9 +141,48 @@ input.sub-btn {
     height: 50px;
     text-transform: capitalize;
 }
-.Login input {
+.first-name {
+    width: 48%;
+    float: left;
+    margin-right: 5px;
+}
+.last-name {
+    width: 48%;
+    float: left;
+    margin-left: 5px;
+}
+
+span.error {
+    background: #fee2e2;
+    border-radius: 4px;
+    color: red;
+    font-family: poppins;
+    padding: 3px 7px;
+    font-weight: 500;
+}
+
+p.errors-div {
+    background: #fee2e2;
+    float: left;
+    border-radius: 5px;
+    color: red;
+    padding: 2px 7px;
+    font-weight: bold;
+    font-size: 13px;
+    float: right;
+    margin-bottom: 0px;
+}
+p.errors-div svg {
+    margin-right: 4px;
+}
+.signup input {
     background: none;
-    margin: 0 !important;
-    border: none !important;
-    color: #fff;
+    border: none;
+    height: auto;
+    padding: 0px !IMPORTANT;
+    color: #fff !important;
+    margin: 0px;
+}
+.gray.Login a {
+    color: #000;
 }

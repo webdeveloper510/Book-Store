@@ -5,12 +5,13 @@ import { Login } from './component/login/Login';
 import { ForgotPassword } from './component/forgotPassword/ForgotPassword';
 import { Header } from './component/header/Header'
 import { Home } from './component/home/Home';
-
+import { Sellbook } from './component/sellbook/Sellbook';
 import Routerpage from './component/routes/Routes';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useLocation } from 'react-router-dom';
 import { About } from './component/about/About';
+import {Signup} from './component/Signup/Signup'
 function App() {
  
   return (
@@ -25,6 +26,8 @@ function App() {
       <Route exact path="/about"  element={ <About/>} /> 
   <Route exact path="/forgotPassword"  element={ <ForgotPassword/>} /> 
   <Route exact path="/login"  element={ <Login/>} /> 
+  <Route exact path="/sellbook"  element={ <Sellbook/>} /> 
+  <Route exact path="/signup"  element={ <Signup/>} /> 
   </Routes>
       </Router>
         </div>

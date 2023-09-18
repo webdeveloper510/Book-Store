@@ -73,7 +73,7 @@ Get Started & Learning Today</h2>
 <h2> Sell Book</h2>
 <h3>Consectetur adipisicing elit, sed do eiusmod tempor incididunt labore magna Utas enim ad minim veniamh quis nostrud.</h3>
            <p>Exercitation ullamco laboris nisiuts duis aute irure dolor in reprehenderit ina voluptate velit esse sed cillum dolor fugiat nulla pariatur excepteur sint.Occaecat nony proident sunt in culpa qui deser sit cupidatate sed ipsum dolor eiusmod tempor incididunts.</p>
-           <div class="button-container"><div class="books"> <NavLink className="btn-round" to="/">Sell Book</NavLink></div></div>
+           <div class="button-container"><div class="books"> <NavLink className="btn-round" to="/sellbook">Sell Book</NavLink></div></div>
          
         </Container>
 		   </div>
@@ -100,7 +100,7 @@ Get Started & Learning Today</h2>
 <h2>Write Book</h2>
 <h3>Consectetur adipisicing elit, sed do eiusmod tempor <br></br>incididunt labore magna Utas enim ad minim veniamh quis nostrud.</h3>
            <p>Exercitation ullamco laboris nisiuts duis aute irure dolor in reprehenderit ina <br></br> voluptate velit esse sed cillum dolor fugiat nulla pariatur excepteur sint.Occaecat <br></br> nony proident sunt in culpa qui deser sit cupidatate sed ipsum dolor eiusmod <br></br>tempor incididunts.</p>
-           <div class="button-container"><div class="books"> <NavLink className="btn-round" to="/">Sell Book</NavLink></div></div>
+           <div class="button-container"><div class="books"> <NavLink className="btn-round" to="/sellbook">Sell Book</NavLink></div></div>
          
         </Container>
 		   </div>
@@ -120,7 +120,7 @@ Get Started & Learning Today</h2>
 <h2> Sell Book</h2>
 <h3>Consectetur adipisicing elit, sed do eiusmod tempor incididunt labore magna Utas enim ad minim veniamh quis nostrud.</h3>
            <p>Exercitation ullamco laboris nisiuts duis aute irure dolor in reprehenderit ina voluptate velit esse sed cillum dolor fugiat nulla pariatur excepteur sint.Occaecat nony proident sunt in culpa qui deser sit cupidatate sed ipsum dolor eiusmod tempor incididunts.</p>
-           <div class="button-container"><div class="books"> <NavLink className="btn-round" to="/">Sell Book</NavLink></div></div>
+           <div class="button-container"><div class="books"> <NavLink className="btn-round" to="sellbook">Sell Book</NavLink></div></div>
          
         </Container>
 		   </div>

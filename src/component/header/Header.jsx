@@ -13,9 +13,19 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Logo from "../assests/logo/logo.png";
+import { Login } from "../login/Login";
 
 export const Header = () => {
-  
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const handleLogin = () => {
+    // Perform login logic here (e.g., set user as logged in)
+    setIsLoggedIn(true);
+  };
+
+  const handleLogout = () => {
+    // Perform logout logic here (e.g., set user as logged out)
+    setIsLoggedIn(false);
+  };
   return (
     <div className="header_top">
 <Container>
@@ -24,6 +34,15 @@ export const Header = () => {
 <Navbar  expand="lg">  
 
      <Navbar.Brand href="/"><img src={Logo} alt='Book store' /></Navbar.Brand> 
+     {isLoggedIn ? (
+          <>
+            
+            <button onClick={handleLogout}>Log Out</button> {/* Display a logout button */}
+          </>
+        ) : (
+          <NavLink exact activeClassName="active" to="/">Home</NavLink>
+        )}
+     
       <Navbar.Toggle aria-controls="basic-navbar-nav" />  
       <Navbar.Collapse id="basic-navbar-nav">  
         <Nav className="">  
@@ -36,7 +55,7 @@ export const Header = () => {
           <NavLink exact activeClassName="active" to="/about">About us</NavLink>
         </li>
         <li className="nav-item">
-         <NavLink className="" to="/login">sell book</NavLink>
+         <NavLink className="" to="/sellbook">sell book</NavLink>
         </li>
 		<li className="nav-item">
       <NavLink exact activeClassName="active" to="/login">write book</NavLink>
