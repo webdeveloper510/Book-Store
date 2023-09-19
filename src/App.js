@@ -12,13 +12,18 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { useLocation } from 'react-router-dom';
 import { About } from './component/about/About';
 import {Signup} from './component/Signup/Signup'
+import { Verification } from './component/verification/Verification';
+import { Writebook } from './component/writebook/Writebook';
+import { SetPassword } from './component/forgotPassword/SetPassword';
+import { AddBook } from './component/sellbook/Addbook';
 function App() {
  
   return (
 <div>
 
-<Router>
 
+<Router>
+<Header></Header>
     
       <Routes>
      
@@ -28,6 +33,10 @@ function App() {
   <Route exact path="/login"  element={ <Login/>} /> 
   <Route exact path="/sellbook"  element={ <Sellbook/>} /> 
   <Route exact path="/signup"  element={ <Signup/>} /> 
+  <Route exact path="/writebook"  element={<Writebook></Writebook>} /> 
+  <Route exact path="/verification"  element={ <Verification/>} /> 
+  <Route exact path="/set-password"  element={ <SetPassword></SetPassword>} /> 
+  <Route exact path="/add-book"  element={ <AddBook/>} /> 
   </Routes>
       </Router>
         </div>

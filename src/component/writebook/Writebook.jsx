@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react'
+import React from 'react'
 import { Header } from '../header/Header'
 import { Breadcrumb } from 'react-bootstrap'
 import Container from 'react-bootstrap/Container';
@@ -7,7 +7,7 @@ import { FaHome } from "react-icons/fa";
 import { FaAngleLeft } from "react-icons/fa";
 import { FaBookOpen } from "react-icons/fa";
 import { Footer } from '../footer/Footer';
-import'./sellbook.css'
+import'./writebook.css'
 import {Link, NavLink, useNavigate} from 'react-router-dom';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -20,24 +20,14 @@ import sellbook from'../assests/sellbook/textbook.jpg'
 import sell2 from'../assests/sellbook/sell2.webp'
 import seller1 from'../assests/sellbook/seller1.webp'
 import { Showcase } from '../showcasebox/Showcase';
-import { AddBook } from './Addbook';
-export const Sellbook = () => {
-    const [isPopupOpen, setIsPopupOpen] = useState(false);
-    const [showDiv, setShowDiv] = useState(false);
-  // Step 3: Function to open the popup
-  const handleOpenPopup = () => {
-    setIsPopupOpen(true);
-  };
-  const toggleDiv = () => {
-    setShowDiv(!showDiv);
-  };
 
+export const Writebook = () => {
   return (
     <div> 
     <header className='page-header'>
     <Container>
       <div className='page-title'>
-      <h2>Sell Book</h2>
+      <h2>Write Book</h2>
       <div className='page-info'>
       
       </div>
@@ -51,8 +41,8 @@ export const Sellbook = () => {
     <Row>
         <Col md ={6} xs={12}>
         <div className='book-heading no-line content-left-align'>
-    <div className='book-heading-prefix'> Sell books</div>
-    <h2 className='book-title'>Tips to Sell books Successfully</h2>
+    <div className='book-heading-prefix'> Write Books</div>
+    <h2 className='book-title'>Tips to Write Your  book</h2>
     <div className='book-heading-border'>
     <div className="book-heading tripple content-left-align">
 <div className='tips_content'>
@@ -95,7 +85,7 @@ export const Sellbook = () => {
 </div>
     <div className="book-heading-border"></div></div>
 
-    <div class="button-container"><div class="books"> <NavLink className="btn-round" to="/">View my books</NavLink></div><div class="read"><NavLink className="btn-round" to="/add-book">Add My Books</NavLink></div></div>
+    <div class="button-container"><div class="books"> <NavLink className="btn-round" to="/">View my books</NavLink></div><div class="read"><NavLink className="btn-round" to="/">Read More</NavLink></div></div>
     </div>
     </div>
                 </Col>
@@ -226,16 +216,8 @@ and choose the highest offer
     
                             </Container>
         </div>
-        {showDiv && (
-        <div>
-          <h2>Div Content</h2>
-          <p>This is the content of the div.</p>
-        </div>
-      )}
                         </div>
-
-            <Footer></Footer>	
-      
+            <Footer></Footer>			
     </div>
   )
 }

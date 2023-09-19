@@ -16,16 +16,19 @@ import Logo from "../assests/logo/logo.png";
 import { Login } from "../login/Login";
 
 export const Header = () => {
+  const navigate = useNavigate();
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const handleLogin = () => {
-    // Perform login logic here (e.g., set user as logged in)
-    setIsLoggedIn(true);
-  };
+  const handleLogout = (event) => {
+    event.preventDefault();
+    localStorage.clear();
+    navigate('/login')
+    // window.location.reload(false);
+    // window.location.reload();
+    // notify();
+    
+}
 
-  const handleLogout = () => {
-    // Perform logout logic here (e.g., set user as logged out)
-    setIsLoggedIn(false);
-  };
+  const ss = localStorage.getItem("Loginverfied");
   return (
     <div className="header_top">
 <Container>
@@ -34,20 +37,13 @@ export const Header = () => {
 <Navbar  expand="lg">  
 
      <Navbar.Brand href="/"><img src={Logo} alt='Book store' /></Navbar.Brand> 
-     {isLoggedIn ? (
-          <>
-            
-            <button onClick={handleLogout}>Log Out</button> {/* Display a logout button */}
-          </>
-        ) : (
-          <NavLink exact activeClassName="active" to="/">Home</NavLink>
-        )}
+     
      
       <Navbar.Toggle aria-controls="basic-navbar-nav" />  
       <Navbar.Collapse id="basic-navbar-nav">  
         <Nav className="">  
          <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-       
+        
         <li className="nav-item">
         <NavLink exact activeClassName="active" to="/">Home</NavLink>
         </li>
@@ -58,7 +54,7 @@ export const Header = () => {
          <NavLink className="" to="/sellbook">sell book</NavLink>
         </li>
 		<li className="nav-item">
-      <NavLink exact activeClassName="active" to="/login">write book</NavLink>
+      <NavLink exact activeClassName="active" to="/writebook">write book</NavLink>
         </li>
 		<li className="nav-item">
            <NavLink exact activeClassName="active" to="/login">courses</NavLink>
@@ -67,7 +63,19 @@ export const Header = () => {
            <NavLink exact activeClassName="active" to="/login">book stores</NavLink>
         </li>
       </ul>
-      <NavLink className="btn-round" to="/login">CREATE ACCOUNT</NavLink>
+      {      
+                            ss == 'Login successfull' ? (
+                              <>
+                             <li> <NavLink to="/dashboard"> <NavLink className="btn-round" onClick={handleLogout}>Logout</NavLink></NavLink></li> 
+                            
+                             </>
+                          ) : (
+                            <>
+                                  <NavLink className="btn-round" to="/login">CREATE ACCOUNT</NavLink>
+                            </>
+                          )
+                        }
+
         </Nav>  
       </Navbar.Collapse>  
 

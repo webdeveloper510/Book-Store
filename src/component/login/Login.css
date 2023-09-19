@@ -150,3 +150,21 @@ input.sub-btn {
     border: none !important;
     color: #fff;
 }
+.fa-eye::before {
+    content: '\f06e'; /* Unicode for an eye icon */
+  }
+  
+  .fa-eye-slash::before {
+    content: '\f070'; /* Unicode for a slashed eye icon */
+  }
+
+  span.pass_icons {
+    position: absolute;
+    right: 17px;
+    top: 44%;
+}
+.input-container{
+position: relative;
+    float: left;
+    width: 100%;
+}

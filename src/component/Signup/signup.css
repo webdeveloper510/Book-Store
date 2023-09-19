@@ -4,6 +4,11 @@
     background-image: url("../assests/Login/minimal_bg.jpg");
     display: flex;
     align-items: center;
+    width: 100%;
+    float: left;
+    height: max-content;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .inner-div {
     width: 60%;
@@ -185,4 +190,7 @@ p.errors-div svg {
 }
 .gray.Login a {
     color: #000;
+}
+span.hide{
+    display: none;
 }

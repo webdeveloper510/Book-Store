@@ -7,7 +7,18 @@ import LeftImage from "../assests/Login/left-photo.jpg";
 import Logo from "../assests/Login/logo.png";
 import {Link, NavLink, useNavigate} from 'react-router-dom';
 import { FaExclamationCircle } from "react-icons/fa";
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
+import { Emailverify } from '../Emailverify/Emailverify';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 export const Login = () => {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const closePopup = () => {
+    // Close the popup when the user clicks "Close" or perform any other desired actions.
+    setIsPopupOpen(false);
+  };
+  const [error,setError]=useState(false);
+  const [active, setActive] = useState(false);
   const { register, handleSubmit, formState: { errors } } = useForm();
   const [isDivVisible, setIsDivVisible] = useState(false);
   const navigate = useNavigate();
@@ -16,7 +27,15 @@ export const Login = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [loading, setLoading] = useState(false);
     const [action,setAction] = useState("Login")
+ // start Error mesasge states
+ const [verifyEmail, setVerifyEmail] = useState('');
+ const [InvalidDetails, setInvalidDetails] = useState('');
 
+    const [showPassword, setShowPassword] = useState(false);
+    const togglePasswordVisibility = () => {
+      setShowPassword(!showPassword);
+    };
+  
     const handleEmail = (e) => {
       setEmail(e.target.value);
   }
@@ -38,17 +57,27 @@ export const Login = () => {
   }, {
   })
       .then(function (response) {
-    console.log();
+    console.log(response);
     if(response.data.message == "Please verify your email"){
-      alert("Please verify your email");
+      localStorage.clear();
+      localStorage.setItem("signup_email", email);
+     
+
+setIsPopupOpen(true);
+      
 
     }
     else if(response.data.message == "Cannot read properties of null (reading 'status')"){
       setIsDivVisible(!isDivVisible);
     }
+    else if(response.data.message =="Invalid Credentials")
+    {
+      setInvalidDetails(response.data.message)
+    }
 else{
   console.log(response);
-  setIsLoggedIn(true);
+   localStorage.setItem("Loginverfied",response.data.message);
+   localStorage.setItem("token", response.data.result.jwtToken);
   navigate("/")
 }
         
@@ -102,16 +131,27 @@ else{
       {errors.email?.type === 'pattern' && <p role="alert" className='errors-div'><span><FaExclamationCircle/></span><span>Enter Valid Email</span></p>}
       </div>
       <div className="input-container">
-      <input type ="Password" placeholder='Password'
+      <input 
+   type={showPassword ? 'text' : 'password'}
+      placeholder='Password'
         {...register("password", { required: "Set password" })} 
         aria-invalid={errors.password ? "true" : "false"} 
         value={password} onChange={handlePassword}/>
+
+<span className="pass_icons" type="button" onClick={togglePasswordVisibility}>
+                                                                        {showPassword ? <FaEyeSlash /> : <FaEye />}
+                                                                    </span>
+    
      {errors.password?.type === 'required' && <p role="alert" className='errors-div'><span><FaExclamationCircle/></span><span>required</span></p>}
       </div>
 
 	 
-	  
-
+      <p className='-div'>{verifyEmail ? verifyEmail :""}</p>
+      <p className='errors-div'>{InvalidDetails ? InvalidDetails :""}</p>
+      <div className="button-containerddd">
+      <NavLink exact className="forgot-pass" to="/forgotPassword">Forgot Password?</NavLink>
+        
+        </div>
        <div className="button-container">
         <div   className="Login"> <div className=''>     <input type="submit"  className='signup' value="Login"/></div></div>
         <div className=  "signup gray"><NavLink className="" to="/signup">Sign Up</NavLink></div>
@@ -120,6 +160,7 @@ else{
      </form>
 </div>
         </div>
+        <Emailverify isOpen={isPopupOpen} onClose={closePopup} />
           {/* end login signup code */}
 
             {/* forgot Pass code */}

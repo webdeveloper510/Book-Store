@@ -15,7 +15,7 @@ import { Showcase } from '../showcasebox/Showcase';
 export const About = () => {
   return (
    
-    <div> <Header></Header>
+    <div> 
 <header className='page-header'>
 <Container>
   <div className='page-title'>
